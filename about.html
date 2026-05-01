@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Bhoomi Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Bhoomi<span class="text-gradient">.</span></a>
+            <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="certification.html">Certifications</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main style="padding-top: 80px;">
+        <section class="section container">
+            <h1 class="section-title animate-on-scroll">About <span class="text-gradient">Me</span></h1>
+            
+            <div class="about-content" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem; align-items: center;">
+                <div class="about-image animate-on-scroll" style="position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                    <img src="profile.jpeg" alt="Bhoomi" style="width: 100%; display: block; filter: grayscale(20%); transition: filter var(--transition-slow);">
+                </div>
+                
+                <div class="about-text animate-on-scroll">
+                    <h3 style="font-size: 2rem; margin-bottom: 1.5rem;">Professional Summary</h3>
+                    <p style="margin-bottom: 1.5rem; color: var(--text-secondary); font-size: 1.1rem;">
+                        I am a dedicated professional with a strong foundation in my field. I strive to continuously learn and apply my skills to solve real-world problems. My goal is to build impactful, user-centric solutions while maintaining a high standard of quality.
+                    </p>
+                    
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem; margin-top: 2rem;">Core Skills</h3>
+                    <div class="skills-grid" style="display: flex; flex-wrap: wrap; gap: 1rem;">
+                        <span style="padding: 0.5rem 1.5rem; background: var(--surface-color-light); border-radius: 50px; font-weight: 500; border: 1px solid var(--border-color);">Skill 1</span>
+                        <span style="padding: 0.5rem 1.5rem; background: var(--surface-color-light); border-radius: 50px; font-weight: 500; border: 1px solid var(--border-color);">Skill 2</span>
+                        <span style="padding: 0.5rem 1.5rem; background: var(--surface-color-light); border-radius: 50px; font-weight: 500; border: 1px solid var(--border-color);">Skill 3</span>
+                        <span style="padding: 0.5rem 1.5rem; background: var(--surface-color-light); border-radius: 50px; font-weight: 500; border: 1px solid var(--border-color);">Skill 4</span>
+                        <span style="padding: 0.5rem 1.5rem; background: var(--surface-color-light); border-radius: 50px; font-weight: 500; border: 1px solid var(--border-color);">Skill 5</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

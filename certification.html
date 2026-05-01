@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications | Bhoomi Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .cert-card {
+            background: var(--surface-color);
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            border: 1px solid var(--border-color);
+            transition: transform var(--transition-normal);
+        }
+        .cert-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--secondary-color);
+        }
+        .cert-icon {
+            font-size: 3rem;
+            color: var(--secondary-color);
+            margin-bottom: 1.5rem;
+        }
+        .cert-title {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+        .cert-issuer {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+        /* Modal is handled by global CSS */
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Bhoomi<span class="text-gradient">.</span></a>
+            <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="certification.html">Certifications</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main style="padding-top: 80px;">
+        <section class="section container">
+            <h1 class="section-title animate-on-scroll">My <span class="text-gradient">Certifications</span></h1>
+            
+            <p style="text-align: center; color: var(--text-secondary); margin-bottom: 3rem;" class="animate-on-scroll">
+                Click "View Certificate" to see the full document. I will be adding more certificates here later!
+            </p>
+
+            <div class="cert-grid">
+                <!-- Cert 1 -->
+                <div class="cert-card animate-on-scroll">
+                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                    <h3 class="cert-title">Web Development Bootcamp</h3>
+                    <div class="cert-issuer">Udemy</div>
+                    <a href="#" class="btn btn-outline view-image-btn" data-src="https://via.placeholder.com/800x600?text=Certificate+Placeholder" style="font-size: 0.9rem; padding: 0.5rem 1.5rem;">
+                        View Certificate
+                    </a>
+                </div>
+
+                <!-- Cert 2 -->
+                <div class="cert-card animate-on-scroll">
+                    <div class="cert-icon"><i class="fas fa-award"></i></div>
+                    <h3 class="cert-title">React.js Advanced Concepts</h3>
+                    <div class="cert-issuer">Coursera</div>
+                    <a href="#" class="btn btn-outline view-image-btn" data-src="https://via.placeholder.com/800x600?text=Certificate+Placeholder" style="font-size: 0.9rem; padding: 0.5rem 1.5rem;">
+                        View Certificate
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Modal for Resume/Certificates -->
+    <div class="modal" id="imageModal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
